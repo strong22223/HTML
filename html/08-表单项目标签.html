@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="#" method="post">
+    <!--
+            首先将标签label作为一种 替换,作为input 中id的代替
+
+    -->
+    <label for="una">用户名:</label>
+    <input type="text" name="username" id="una"><br>
+
+
+    <label for="pwd">密码:</label>
+    <input type="password" name="password" id=pwd><br>
+
+    <br>
+    <!--    性别&lt;!&ndash;:-->
+    <!--    <input type="radio" name="gender" id="women" value="1"> 男-->
+    <!--    <input type="radio" name="gender"  id="man"value="2"> 女&ndash;&gt;-->
+
+
+    <!--
+    使用label标签将包裹起来
+        标签在包裹的时间,必须拥有的就是对input 标签中的id 的对应的事物
+
+
+    -->
+    性别: <label for="man"> 男</label>
+    <input type="radio" name="gender" id="man" value="1">
+    <label for="women">女</label>
+    <input type="radio" name="gender" id="women" value="2">
+
+    <br>
+    爱好:
+    <label for="trip">旅游</label>
+    <input  type="checkbox"  name="hobby" values="1" id="trip">
+
+    <label for="game">游戏</label>
+    <input  type="checkbox"  name="hobby" values="2" id="game">
+
+    <label for="beautiful female"> <font color="ff0000"> 美女</font> </label>
+    <input  type="checkbox"  name="hobby" values="1" id="beautiful female">
+
+
+<br>
+    头像:<input type="file"><br>
+
+    <input type="submit" value="免费注册">
+    <input type="reset" value="重置">
+    <input type="button" value="一个按钮">
+
+    <!--
+        下拉标签
+
+    -->
+    城市:
+        <select name="city">
+            <option>北京</option>
+            <option value="guangzhou">广州</option>
+            <option>北京</option>
+
+
+        </select>
+
+    个人描述:
+    <textarea rows="1" cols="2" name="desc">
+
+
+    </textarea>
+</form>
+
+</body>
+</html>
